@@ -1,0 +1,372 @@
+---
+title: "Predicting the 2019 Canadian Federal Election Result if Every Citizen Had Voted"
+author: "Aiting Zhang(1004926066)"
+date: "21 December 2020"
+output:
+  pdf_document:
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(cesR)
+library(labelled)
+library(tidyverse)
+library(haven)
+```
+
+# Abstract
+
+This report aims to predict if every Canadian had voted in the 2019 Canadian Federal Election, how the outcome would have been different. For this investigation, I obtain the survey data set from the 2019 Canadian Election Study - Online Survey (CES), a program to record Canadians’ preferences and participation in politics and the issues of social concerns. Also, I choose Education Highlight Tables, 2016 Census as population data set from Statistics Canada because this data set represents Canada’s population from 2016 to 2019. I will build a multilevel logistic regression model and post-stratification based on the main variables in these two data sets: gender, age, province, education level, and vote intention. Then, using the model to predict how the election outcome would have been changed.
+
+
+# Keywords
+
+Multilevel logistic regression model, post-stratification, Federal Election, Predict, Census
+
+
+# Introduction
+
+There is no doubt that voting and elections are the most basic elements of democracy. In Canada, people can know the social and political life of Canada through the federal elections. Statistical analysis is very useful in the Canadian Election Study (CES). CES is a large-scale survey of citizens, and it will be conducted in every election year, and it enhances the understanding of Canadian electoral democracy. CES is the data set that records Canadians’ preferences and participation in politics, as well as the issues of social concerns. 
+
+According to Statistics Canada, it states “just over three-quarters (77%) of Canadians reported voting in the 2019 federal election, unchanged from the 2015 election” (Government of Canada Reasons for Not Voting in the Federal Election, October 21, 2019). Since it was not everyone voted in the 2019 Canadian Federal Election, then this project aims to analyze how the 2019 federal election would have changed if everyone had voted. From the data sets of CES, the 2019 Canadian Election Study will be the survey data. I choose Education Highlight Tables, 2016 Census as population data set from Statistics Canada because this data set represents Canada’s population from 2016 to 2019. Since the census is conducted every five years in Canada, the next population census will be conducted in 2021, and then we assume the population has no obvious changes between 2016 and 2019. 
+
+These two data sets will be used to investigate how the result of the 2019 Canadian Federal Election would be changed if 100% of Canadians voted in the 2019 federal election by creating a multilevel logistic regression model and post-stratification. In the Methodology section, I describe the data, the process of post-stratification, the model. Furthermore, I describe estimating voter intention in the Results section. Other parts regarding the model will be included in the Discussion section.
+
+
+
+```{r, include=FALSE}
+#Load survey data, which is 2019 CES online survey
+data_survey <- read_dta(file = "/Users/aitingzhang/Desktop/STA304 Final Project/ces2019_web.dta")
+
+#Convert values to factor type
+data_survey <-to_factor(data_survey)
+head(data_survey)
+
+#Load census data, which is Education Highlight Tables, 2016 Census
+data_census <- read.csv(file = "/Users/aitingzhang/Desktop/STA304 Final Project/98-402-X2016010-T1-csv-eng/98-402-X2016010-T1-CANPR-eng.csv")
+```
+
+```{r, warning=FALSE, include=FALSE}
+#Cleaning data sets
+#Filtering the census data
+#the Age column for 25 to 64 is the repeated data
+data_census <- filter(data_census, Age!="All ages, 15-plus", Age!= "25 to 64", Sex!="Both sexes")
+
+#Counts and distributions are the same data, we only need one of them
+education_counts <-c("Total...Highest.certificate..diploma.or.degree..2016.counts.",
+                     "No.certificate..diploma.or.degree..2016.counts.",
+                     "Secondary..high..school.diploma.or.equivalency.certificate..2016.counts.",
+                     "Apprenticeship.or.trades.certificate.or.diploma..2016.counts.",
+                     "College..CEGEP.or.other.non.university.certificate.or.diploma..2016.counts.",
+                     "University.certificate.or.diploma.below.bachelor.level..2016.counts.",
+                     "University.certificate..diploma.or.degree.at.bachelor.level.or.above..2016.counts.")
+
+#Pivoting the census data set
+data_census_new <- data_census %>% 
+  select(c("Geographic.name", "Age", "Sex", education_counts)) %>% 
+  pivot_longer(cols=education_counts, names_to="Education", values_to="Total_count")
+
+#Select some variable from the survey data set
+data_survey_new <- data_survey %>% 
+  select(cps19_province,
+         cps19_age,
+         cps19_gender,
+         cps19_education,
+         cps19_votechoice)
+
+#Delete NA
+data_survey_new<-na.omit(data_survey_new)
+```
+
+
+```{r, include=FALSE}
+#Map survey and census data sets
+#Map cps19_province and Geographic.name column
+#Rename survey column and census column
+data_survey_new<-rename(data_survey_new,Province=cps19_province)
+data_census_new<-rename(data_census_new,Province=Geographic.name)
+
+data_census_new <- filter(data_census_new, Province !="Canada")
+
+data_survey_new$Province <- as.character(data_survey_new$Province)
+
+unique(data_survey_new$Province)
+unique(data_census_new$Province)
+
+#Map cps19_gender and Sex column
+#Rename survey column and census column
+data_survey_new<-rename(data_survey_new,Gender=cps19_gender)
+data_census_new<-rename(data_census_new,Gender=Sex)
+
+data_survey_new<-data_survey_new %>% 
+  mutate(Gender = case_when(Gender == "A woman" ~ "Female",
+                            Gender == "A man" ~ "Male")) 
+
+data_survey_new<-na.omit(data_survey_new)
+
+unique(data_survey_new$Gender)
+unique(data_census_new$Gender)
+
+#Map cps19_age and Age column
+#Rename survey column 
+data_survey_new<-rename(data_survey_new,Age=cps19_age)
+
+data_survey_new<-data_survey_new %>% 
+  mutate(Age = case_when(Age >24  & Age <= 34 ~ '25 to 34',
+                         Age >34  & Age <= 44 ~ '35 to 44',
+                         Age >44  & Age <= 54 ~ '45 to 54',
+                         Age >54  & Age <= 64 ~ '55 to 64')) 
+
+#Delete NA
+data_survey_new<-na.omit(data_survey_new)
+
+unique(data_survey_new$Age)
+unique(data_census_new$Age)
+
+#Map cps19_education and Education column
+#Rename survey column 
+data_survey_new<-rename(data_survey_new,Education=cps19_education)
+
+#Cleaning the column of Education in survey data set
+data_survey_new$Education <- as.character(data_survey_new$Education)
+data_survey_new <- filter(data_survey_new, Education != "Don't know/ Prefer not to answer")
+
+#Cleaning the column of Education in census data set
+data_census_new <- filter(data_census_new, Education != "Total...Highest.certificate..diploma.or.degree..2016.counts.")
+
+data_census_new<- data_census_new%>% 
+mutate(Education = case_when(Education == "No.certificate..diploma.or.degree..2016.counts." ~ "No degree",
+                             Education == "Secondary..high..school.diploma.or.equivalency.certificate..2016.counts." ~ "High School",
+                             Education == "College..CEGEP.or.other.non.university.certificate.or.diploma..2016.counts." ~ "College",
+                             Education == "University.certificate.or.diploma.below.bachelor.level..2016.counts." ~ "Some university",
+                             Education == "University.certificate..diploma.or.degree.at.bachelor.level.or.above..2016.counts." ~ "University or above"))
+
+data_survey_new<-data_survey_new %>% 
+  mutate(Education = case_when(Education == "Master's degree" ~ "University or above",
+                               Education == "Completed technical, community college, CEGEP, College Classique" ~ "College",
+                               Education == "Bachelor's degree" ~ "University or above",
+                               Education == "Some technical, community college, CEGEP, College Classique" ~ "High School",
+                               Education == "Professional degree or doctorate" ~ "University or above",
+                               Education == "Completed secondary/ high school" ~ "High School",
+                               Education == "Some university" ~ "Some university",
+                               Education == "Some elementary school" ~ "No degree",
+                               Education == "No schooling" ~ "No degree"))
+
+
+#Delete NA
+data_survey_new<-na.omit(data_survey_new)
+data_census_new<-na.omit(data_census_new)
+
+unique(data_survey_new$Education)
+unique(data_census_new$Education)
+
+
+#Cleaning the column of cps19_votechoice
+data_survey_new$cps19_votechoice <- as.character(data_survey_new$cps19_votechoice)
+data_survey_new <- filter(data_survey_new, cps19_votechoice != "Don't know/ Prefer not to answer", 
+                          cps19_votechoice != "Another party (please specify)" )
+
+#rename
+data_survey_new<-rename(data_survey_new,Votechoice=cps19_votechoice)
+
+unique(data_survey_new$Votechoice)
+```
+
+#### Table 1
+```{r}
+Tabel1 <- glimpse(data_survey_new)
+```
+#### Table 2
+```{r}
+Tabel2 <- glimpse(data_census_new)
+```
+
+
+# Methodology
+
+## Data
+
+From the data sets of CES, the 2019 Canadian Election Study will be the survey data. It records the situation of the 2019 federal election in Canada. There are 37,822 observations and 620 variables. These respondents are all Canadian citizens and live in Canada. They were invited to take this survey and answer some questions about their personal information, especially their vote intention. Then, I choose Education Highlight Tables, 2016 Census as population data set from Statistics Canada because this data set represents Canada’s population from 2016 to 2019. Since the census is conducted every five years in Canada, the next population census will be conducted in 2021, and then we assume the population has no obvious changes between 2016 and 2019. In this census data, there are 252 observations and 20 variables. This census data set’s each row represents a class of respondents, which means they have the same characteristics. It is mainly based on the highest education certificate that they obtained. And, according to their age, gender, residence to divide them into groups. Both of these two data sets are cleaned up because some repeated data are purposeless for analysis. For instance, I combine the variables which relate to education levels in census data into one variable. Then this education variable is able to illustrate each type of respondents’ education level. Meanwhile, I only select some survey data variables to make two data sets’ variables are matched with each other. I also delete the census data set’s Age variable, which says “All ages, 15 plus” and “25 to 64” since these data do not have any meaning to study and are repeated. Also, some respondents did not provide specific answers, such as in the census data, they said they lived in Canada, not a specific province, and for their education level, they answered they do not know. All like these data are deleted. Table 1 and Table 2 illustrate the characteristics of survey data and census data. Table 1 shows the main variables that we selected from the raw survey data, which are Province, Age, Gender, Education, and Votechoice. Education means the highest education certificate for each citizen obtained. Votechoice is each citizen’s vote intention for the 2019 federal election. Table 2 shows the main variables which we selected from the census data. These variables are the same with survey data except for the variable, Total_count. Total_count represents that a class of people, who lives in the same province, has the same gender and education level, and has a similar age.
+
+
+```{r, warning=FALSE, include=FALSE}
+#Create Logistic Regression Model
+#Divide survey data's Votechoice column into groups, which are Liberal Party and Conservative Party
+data_survey_new<-data_survey_new %>% 
+  mutate(Votechoice = case_when(Votechoice == "Liberal Party" ~ "Liberal Party",
+                                Votechoice == "Conservative Party" ~ "Conservative Party")) 
+
+#Delete NA
+data_survey_new<-na.omit(data_survey_new)
+
+unique(data_survey_new$Votechoice)
+
+#Create cell variable in both data sets####
+data_survey_new$cell <- paste(data_survey_new$Gender, data_survey_new$Age)
+data_census_new$cell <- paste(data_census_new$Gender, data_census_new$Age)
+
+colname_survey <- c("Votechoice", "Province", "Age", "Gender", "Education", "cell")
+data_survey_new[colname_survey] <- lapply(data_survey_new[colname_survey], factor) 
+colname_census <- c("Total_count", "Province", "Age", "Gender", "Education", "cell")
+data_census_new[colname_census] <- lapply(data_census_new[colname_census], factor) 
+data_survey_new$Votechoice <- relevel(data_survey_new$Votechoice, ref = "Conservative Party")    #To predict probability of voting for Liberal Party
+
+length(unique(data_survey_new$cell))
+length(unique(data_census_new$cell))
+
+library(lme4)
+library(brms)
+library(tidybayes)
+library(caret)
+library(ROCR)
+library(pROC)
+
+#Model 1
+set.seed(10000000)
+model1 <- glmer(Votechoice ~ (1 + Gender + Province|cell) + Education + Age,
+                data = data_survey_new, 
+                family = binomial)
+
+summary(model1)
+
+prob1 <- predict(model1, type = c('response'))
+model1_result <- ifelse(prob1 >= 0.5, "Liberal Party", "Conservative Party")
+data_survey_new_result1 <- cbind(data_survey_new, model1_result)
+
+
+#ROC Curve for Model 1
+roc_model1 <- roc(data_survey_new_result1$Votechoice, prob1)
+auc(roc_model1)
+plot(roc_model1, auc.polygon=TRUE, print.auc = TRUE,asp = NA)
+
+#Model2
+model2 <- glmer(Votechoice ~ (1 + Gender + Education|cell) + Province + Age,
+                data = data_survey_new, 
+                family = binomial)
+
+summary(model2)
+
+prob2 <- predict(model2, type = c('response'))
+model2_result <- ifelse(prob1 >= 0.5, "Liberal Party", "Conservative Party")
+data_survey_new_result2 <- cbind(data_survey_new, model2_result)
+
+#ROC Curve for Model 2
+roc_model2 <- roc(data_survey_new_result2$Votechoice, prob2)
+auc(roc_model2)
+plot(roc_model2, auc.polygon=TRUE, print.auc = TRUE,asp = NA)
+
+ranef(model1)
+```
+
+## Model
+
+In the survey data set, I only reserve “Liberal Party” and “Conservative Party” for the Votechoice variable to build a logistic regression model. Firstly, I partition the survey and census data sets into cells based on Gender and Age. Then, the variables Gender and Age will combine into one variable. There are 8 different groups for Age and Gender. Then, I create two logistic regression models that are predicting the probability of response variable by the random coefficient and predictors in R. The aim of this project is to predict the probability of a vote intention for the Liberal Party. For the first model, model 1, (1 + Gender + Province | cell) is the random coefficient, Education and Age are the predictors. The second model, model 2, (1 + Gender + Education | cell) is the random coefficient, Province and Age are the predictors. Then, the AUC for model 1 is 0.692, which means the area under the ROC curve is 0.692, and it has the probability of 69.2% that the model 1 will predict correctly. By contrast, there is 68.9% that model 2 will predict correctly. Model 2 has a lower accuracy than model 1. Thus, I choose model1 to be the logistic regression model. The model formula is \
+$\log(\frac{Prob_{Liberal}}{1-{Prob_{Liberal}}})\quad=\quad-1.26023\quad+\quad{a_j}\quad-\quad0.09440*{EducationHighSchool}\quad+\quad0.44828*{EducationNodegree}\quad+\quad0.40881*{EducationSome university}\quad+\quad0.50394*{EducationUniversity or above}\quad-\quad0.09495*{Age35 to 44}\quad-\quad0.26110*{Age45 to 54}\quad-\quad0.46790*{Age55 to 64}$ \
+
+$\log\frac{Prob_{Liberal}}{1-{Prob_{Liberal}}}$ is log odds. ${Prob_{Liberal}}$ is the expected proportion of vote for Liberal Party. -1.26023 is the fixed baseline intercept. If all predictors equal 0 and random coefficient equals 0, then log odds is equal to zero. Also, ${a_j}$ is the random coefficient, \
+
+${a_j}\quad=\quad0.022657592*{Female 25 to 34}\quad-\quad0.057049701*{Female 35 to 44}\quad-\quad0.031960567*{Female 45 to 54}\quad+\quad0.018207352*{Female 55 to 64}\quad+\quad0.074884073*{Male 25 to 34}\quad-\quad0.061177851*{Male 35 to 44}\quad+\quad0.033829570*{Male 45 to 54}\quad+\quad0.009929694*{Male 55 to 64}$ \
+
+Moreover, Education and Age group are all dummy variables, which means if one of respondents meet one of these criterions, then the corresponding criterion will be equal to one, but if they do not meet one of these criterions, the corresponding criterion will be qual to 0. 
+
+
+## Post-stratification
+```{r, warning=FALSE, include=FALSE}
+#Apply the model 1 on census data
+set.seed(10000000)
+data_census_new$estimate_logodds <-
+  model1 %>%
+  predict(newdata = data_census_new)
+
+data_census_new$estimate <-
+  exp(data_census_new$estimate_logodds)/(1+exp(data_census_new$estimate_logodds))
+
+data_census_new$Total_count <- as.numeric(data_census_new$Total_count)
+
+data_census_new %>%
+  mutate(alp_predict_prop = estimate*Total_count) %>%
+  summarise(alp_predict = sum(alp_predict_prop)/sum(Total_count))
+
+
+vote_probability <- predict(model1,data_census_new[,c("Province", "Age", "Gender", "Education", "cell")],type="response")
+vote_prediction <- ifelse(vote_probability > 0.5, "Liberal Party", "Conservative Party")
+data_census_new_result <- cbind(data_census_new,vote_prediction)
+
+#Calculate total votes based on total count
+data_census_new_result$Liberal_Party <- ifelse(data_census_new_result$vote_prediction == "Liberal Party", 
+                                               data_census_new_result$Total_count, 0)
+
+data_census_new_result$Conservative_Party <- ifelse(data_census_new_result$vote_prediction == "Conservative Party", 
+                                                   data_census_new_result$Total_count, 0)
+
+#Calculate every province's vote
+province_prediction <- data_census_new_result %>% group_by(Province) %>% 
+  summarise(Liberal_Party = sum(Liberal_Party), Conservative_Party = sum(Conservative_Party))
+province_prediction$Winner <- ifelse(province_prediction$Liberal_Party > province_prediction$Conservative_Party,
+                                   "Liberal Party","Conservative Party")
+```
+
+After that, I conduct a post-stratification to predict the proportion of votes for the Liberal Party and the Conservative Party. Post-stratification aggregates the value of cell-level by weighting every cell by its relative proportion in the population. In this project, the census data has the variable Total_count, representing the number of respondents under different personal conditions, such as their age, gender, education level, and the province they lived in. Firstly, I divide the census into 8 different cells based on respondents’ gender and age. Then, applying the logistic regression model on the census data will estimate the probability of voting in every province. After that, I sum the Total_count for every cell, and then I weight each proportion estimate by the corresponding population of each cell and sum them together and divide that by the total population of each cell. This process can be presented as $\hat{Y}^{PS} = \frac{\sum_{j}N_j\hat{y_j}}{\sum_{j}N_j}$, $N_j$ is the population size of the $j^{th}$ cell, $\hat{y_j}$ is the estimate proportion for votes in each cell. \
+
+I also use another method to predict the vote probability on the Liberal Party and the Conservative Party, applying the logistic regression model on the census data and converting each respondent’s vote intention to a probability. If the probability of their vote intention is greater than 0.5, I predict they will choose the Liberal Party. However, if their probability is lower than 0.5, I predict they will choose the Conservative Party. Then, I use these probabilities to calculate total votes based on the population for each cell. Finally, I calculate the total votes for each province. If the Liberal Party’s total votes in a province are higher than the Conservative Party, then I predict this province will choose the Liberal Party. Otherwise, they will choose the Conservative Party. Thus, we can know which party will have higher amounts of votes among 13 provinces in Canada. 
+
+
+# Result
+
+#### Figure 1
+```{r}
+plot(roc_model1, auc.polygon=TRUE, print.auc = TRUE,asp = NA)
+```
+
+#### Figure 2
+```{r}
+plot(roc_model2, auc.polygon=TRUE, print.auc = TRUE,asp = NA)
+```
+I build two logistic regression models to see which one will predict better. These two models are different on random coefficients. Figure 1 and Figure 2 shows these two models’ area under the curve. It is obvious that Model 1 has a larger area, 0.692, which means Model 1 will have a higher accuracy on prediction than Model 2. So, I choose Model 1 to predict. When I conduct post-stratification, I divide the census into 8 different cells based on respondents’ gender and age. Then, applying the logistic regression model on the census data will estimate the probability of voting in every province. After that, I sum the Total_count for every cell, and then I weight each proportion estimate by the corresponding population of each cell and sum them together and divide that by the total population of each cell. Based on the formula $\hat{Y}^{PS} = \frac{\sum_{j}N_j\hat{y_j}}{\sum_{j}N_j}$, I get $\hat{Y}^{PS}$ = 0.494, which means the prediction of voting probability for the Liberal Party is 49.4%. Moreover, I also apply the logistic regression model on the census data, convert each respondent’s vote intention to a probability, and calculate each province’s total votes. \
+
+#### Table 3
+```{r, warning=FALSE, echo=FALSE}
+final_result <- province_prediction %>% group_by(Winner) %>% count()
+print(Table3 <- final_result)
+
+Table3$n/nrow(province_prediction)
+```
+From Table 3, among all 13 provinces in Canada, there are 5 provinces vote for the Conservative Party, and 8 provinces vote for the Liberal Party. The proportion of the Conservative Party’s vote is 38.46%, and the proportion of the vote for the Liberal Party is 61.54%. 
+
+
+# Discussion
+
+## Summary
+
+This report aims to predict if every Canadian had voted in the 2019 Canadian Federal Election, how the outcome would have been different. Since not all Canadians voted, only 77% of Canadian citizens voted. In this investigation, I build the logistic regression model with post-stratification based on the main variables in both survey and census data: gender, age, province, education level, and vote intention to predict. I apply the post-stratification on the census data to predict the proportion of voting for the Liberal Party. The result is $\hat{Y}^{PS}$ = 0.494. Besides, I apply the logistic regression model on the census data, convert each respondent’s vote intention to a probability, and calculate each province’s total votes. The result is that 5 provinces vote for the Conservative Party and 8 provinces vote for the Liberal Party.
+
+## Conclusion
+
+During the process of post-stratification, it predicts the vote proportion for the Liberal Party is 49.4%, which is almost near 50%. So, we cannot predict the winner only by this method, and we do not have stronger evidence to conclude which party is the winner since the proportion is very nearly 50%. By contrast, according to Table 3 in the Results part, 5 provinces vote for the Conservative Party and 8 provinces vote for the Liberal Party. The proportion of the vote for the Liberal Party is 61.54%, and the proportion of the Conservative Party’s vote is 38.46%. Also, based on the ROC curve, the accuracy for this logistic regression model is 69.2%. So, the model is feasible and reliable. We can then conclude that if every Canadian had voted in the 2019 Canadian Federal Election, the winner is still the Liberal Party. This is the same as the actual outcome in the 2019 Canadian Federal Election. Therefore, in this election, the Canadian government has not changed much. 
+
+## Weakness and Next Steps
+
+There are also some limitations to this investigation. First of all, when cleaning both survey data and census data, I dropped some repeated data and some NAs, such as if the respondents do not indicate their province specifically, or they do not show their education level correctly, I delete these data. This may cause the observation size becomes smaller, and then the accuracy of the prediction results will be influenced. Besides, when creating the logistic regression model, I only keep the Liberal Party and the Conservative Party, but there still hace other parties that I do not consider. This will also influence the prediction results. And the survey data from the 2019 Canadian Election Study - Online Survey (CES), but I choose Education Highlight Tables, 2016 Census as population data set from Statistics Canada. Since the census is conducted every five years in Canada, the next population census will be conducted in 2021. Then we only assume the population has no obvious changes between 2016 and 2019. So, the assumption is too idealistic; this population data set is a little bit outdated. \
+
+The next step for this investigation is to fix the weakness in order to make the prediction more accurately. And I can continue to find more real-time data that can represent the total Canadian population in 2019. Also, I can consider how to be cleaning the data sets again. For example, if the respondent does not indicate their province specifically, I may make these people belong to “other province”, then the observation size will not decrease significantly. Then, the result of our prediction will be more accurate. 
+
+# References
+
+1. Stephenson, Laura B, et al. “2019 Canadian Election Study - Online Survey.” Harvard Dataverse, Harvard Dataverse, 1 May 2020, dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FDUS88V.
+
+2. Government of Canada, Statistics Canada. Reasons for Not Voting in the Federal Election, October 21, 2019. 26 Feb. 2020, www150.statcan.gc.ca/n1/daily-quotidien/200226/dq200226b-eng.htm.
+
+3. Government of Canada, Statistics Canada. “Education Highlight Tables, 2016 Census.” Government of Canada, Statistics Canada, 27 Nov. 2017, www12.statcan.gc.ca/census-recensement/2016/dp-pd/hlt-fst/edu-sco/index-eng.cfm.
+
+# Appendix
+
+## Code and data supporting this analysis is available at: https://github.com/aitingzhang47/STA304_Final-Project.git
+
+```{r}
+#Save the final datasets
+write_csv(data_census_new_result, "data_census.csv")
+write_csv(data_survey_new_result1, "data_survey.csv")
+```
+
