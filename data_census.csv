@@ -1,0 +1,521 @@
+Province,Age,Gender,Education,Total_count,cell,estimate_logodds,estimate,vote_prediction,Liberal_Party,Conservative_Party
+Newfoundland and Labrador,25 to 34,Male,No degree,144,Male 25 to 34,1.3109623441977172,0.7876741463280259,Liberal Party,144,0
+Newfoundland and Labrador,25 to 34,Male,High School,176,Male 25 to 34,0.7682821118582728,0.6831491629298372,Liberal Party,176,0
+Newfoundland and Labrador,25 to 34,Male,College,178,Male 25 to 34,0.8626844263730162,0.7032212026571426,Liberal Party,178,0
+Newfoundland and Labrador,25 to 34,Male,Some university,71,Male 25 to 34,1.2714955571488429,0.7809986551388639,Liberal Party,71,0
+Newfoundland and Labrador,25 to 34,Male,University or above,169,Male 25 to 34,1.3666290937936671,0.7968349869775356,Liberal Party,169,0
+Newfoundland and Labrador,25 to 34,Female,No degree,124,Female 25 to 34,1.1915507177237903,0.7670182941311272,Liberal Party,124,0
+Newfoundland and Labrador,25 to 34,Female,High School,174,Female 25 to 34,0.6488704853843459,0.6567558840148993,Liberal Party,174,0
+Newfoundland and Labrador,25 to 34,Female,College,199,Female 25 to 34,0.7432727998990893,0.6777111124996649,Liberal Party,199,0
+Newfoundland and Labrador,25 to 34,Female,Some university,68,Female 25 to 34,1.152083930674916,0.7598913495209619,Liberal Party,68,0
+Newfoundland and Labrador,25 to 34,Female,University or above,213,Female 25 to 34,1.2472174673197403,0.7768178198176444,Liberal Party,213,0
+Newfoundland and Labrador,35 to 44,Male,No degree,161,Male 35 to 44,0.36125134166331907,0.5893433148024032,Liberal Party,161,0
+Newfoundland and Labrador,35 to 44,Male,High School,175,Male 35 to 44,-0.18142889067612544,0.45476678568940465,Conservative Party,0,175
+Newfoundland and Labrador,35 to 44,Male,College,198,Male 35 to 44,-0.08702657616138176,0.478257076956506,Conservative Party,0,198
+Newfoundland and Labrador,35 to 44,Male,Some university,74,Male 35 to 44,0.3217845546144448,0.5797591001115584,Liberal Party,74,0
+Newfoundland and Labrador,35 to 44,Male,University or above,170,Male 35 to 44,0.41691809125926904,0.6027455414810537,Liberal Party,170,0
+Newfoundland and Labrador,35 to 44,Female,No degree,147,Female 35 to 44,0.775081657293874,0.684619131687213,Liberal Party,147,0
+Newfoundland and Labrador,35 to 44,Female,High School,177,Female 35 to 44,0.2324014249544295,0.5578402588803655,Liberal Party,177,0
+Newfoundland and Labrador,35 to 44,Female,College,244,Female 35 to 44,0.3268037394691732,0.5809814747961105,Liberal Party,244,0
+Newfoundland and Labrador,35 to 44,Female,Some university,88,Female 35 to 44,0.7356148702449997,0.6760362058027315,Liberal Party,88,0
+Newfoundland and Labrador,35 to 44,Female,University or above,202,Female 35 to 44,0.830748406889824,0.6965131532663599,Liberal Party,202,0
+Newfoundland and Labrador,45 to 54,Male,No degree,184,Male 45 to 54,0.7151645509008202,0.671541330829818,Liberal Party,184,0
+Newfoundland and Labrador,45 to 54,Male,High School,189,Male 45 to 54,0.1724843185613758,0.5430144893818025,Liberal Party,189,0
+Newfoundland and Labrador,45 to 54,Male,College,215,Male 45 to 54,0.2668866330761195,0.5663284188525733,Liberal Party,215,0
+Newfoundland and Labrador,45 to 54,Male,Some university,83,Male 45 to 54,0.6756977638519461,0.6627778074620515,Liberal Party,83,0
+Newfoundland and Labrador,45 to 54,Male,University or above,167,Male 45 to 54,0.7708313004967704,0.6837006932868243,Liberal Party,167,0
+Newfoundland and Labrador,45 to 54,Female,No degree,173,Female 45 to 54,0.8561251043097011,0.7018504423469726,Liberal Party,173,0
+Newfoundland and Labrador,45 to 54,Female,High School,207,Female 45 to 54,0.3134448719702567,0.5777258918228282,Liberal Party,207,0
+Newfoundland and Labrador,45 to 54,Female,College,268,Female 45 to 54,0.4078471864850004,0.6005715623895318,Liberal Party,268,0
+Newfoundland and Labrador,45 to 54,Female,Some university,98,Female 45 to 54,0.816658317260827,0.6935265335556111,Liberal Party,98,0
+Newfoundland and Labrador,45 to 54,Female,University or above,181,Female 45 to 54,0.9117918539056513,0.71336669149529,Liberal Party,181,0
+Newfoundland and Labrador,55 to 64,Male,No degree,212,Male 55 to 64,0.8944116752079228,0.7097997477613736,Liberal Party,212,0
+Newfoundland and Labrador,55 to 64,Male,High School,205,Male 55 to 64,0.35173144286847835,0.5870373862377615,Liberal Party,205,0
+Newfoundland and Labrador,55 to 64,Male,College,190,Male 55 to 64,0.44613375738322203,0.6097196078939133,Liberal Party,190,0
+Newfoundland and Labrador,55 to 64,Male,Some university,94,Male 55 to 64,0.8549448881590487,0.7016034157455648,Liberal Party,94,0
+Newfoundland and Labrador,55 to 64,Male,University or above,162,Male 55 to 64,0.950078424803873,0.7211309496109395,Liberal Party,162,0
+Newfoundland and Labrador,55 to 64,Female,No degree,216,Female 55 to 64,1.1465155116585763,0.7588738855237082,Liberal Party,216,0
+Newfoundland and Labrador,55 to 64,Female,High School,240,Female 55 to 64,0.603835279319132,0.6465332667180647,Liberal Party,240,0
+Newfoundland and Labrador,55 to 64,Female,College,235,Female 55 to 64,0.6982375938338756,0.6677969082763505,Liberal Party,235,0
+Newfoundland and Labrador,55 to 64,Female,Some university,102,Female 55 to 64,1.1070487246097023,0.751578493162713,Liberal Party,102,0
+Newfoundland and Labrador,55 to 64,Female,University or above,164,Female 55 to 64,1.2021822612545265,0.7689127681346689,Liberal Party,164,0
+Prince Edward Island,25 to 34,Male,No degree,63,Male 25 to 34,-0.04719214772648539,0.488204152197004,Conservative Party,0,63
+Prince Edward Island,25 to 34,Male,High School,138,Male 25 to 34,-0.5898723800659298,0.3566641367802254,Conservative Party,0,138
+Prince Edward Island,25 to 34,Male,College,115,Male 25 to 34,-0.49547006555118633,0.37860580925651793,Conservative Party,0,115
+Prince Edward Island,25 to 34,Male,Some university,13,Male 25 to 34,-0.08665893477535969,0.47834881423109515,Conservative Party,0,13
+Prince Edward Island,25 to 34,Male,University or above,123,Male 25 to 34,0.008474601869464582,0.5021186377875324,Liberal Party,123,0
+Prince Edward Island,25 to 34,Female,No degree,40,Female 25 to 34,0.4285060705699033,0.6055168755115116,Liberal Party,40,0
+Prince Edward Island,25 to 34,Female,High School,111,Female 25 to 34,-0.1141741617695411,0.47148742636983737,Conservative Party,0,111
+Prince Edward Island,25 to 34,Female,College,134,Female 25 to 34,-0.019771847254797636,0.4950571992076736,Conservative Party,0,134
+Prince Edward Island,25 to 34,Female,Some university,19,Female 25 to 34,0.389039283521029,0.5960514049858975,Liberal Party,19,0
+Prince Edward Island,25 to 34,Female,University or above,152,Female 25 to 34,0.4841728201658533,0.6187327401532273,Liberal Party,152,0
+Prince Edward Island,35 to 44,Male,No degree,90,Male 35 to 44,0.6554112246670859,0.6582288316632103,Liberal Party,90,0
+Prince Edward Island,35 to 44,Male,High School,127,Male 35 to 44,0.11273099232764139,0.5281529397826444,Liberal Party,127,0
+Prince Edward Island,35 to 44,Male,College,136,Male 35 to 44,0.20713330684238507,0.5515989740740672,Liberal Party,136,0
+Prince Edward Island,35 to 44,Male,Some university,25,Male 35 to 44,0.6159444376182116,0.6492956132205778,Liberal Party,25,0
+Prince Edward Island,35 to 44,Male,University or above,112,Male 35 to 44,0.7110779742630359,0.6706393089471498,Liberal Party,112,0
+Prince Edward Island,35 to 44,Female,No degree,45,Female 35 to 44,0.5946715434567297,0.644436295350463,Liberal Party,45,0
+Prince Edward Island,35 to 44,Female,High School,120,Female 35 to 44,0.051991311117285166,0.5129949007053777,Liberal Party,120,0
+Prince Edward Island,35 to 44,Female,College,153,Female 35 to 44,0.14639362563202885,0.5365331841932575,Liberal Party,153,0
+Prince Edward Island,35 to 44,Female,Some university,24,Female 35 to 44,0.5552047564078554,0.6353422891065534,Liberal Party,24,0
+Prince Edward Island,35 to 44,Female,University or above,150,Female 35 to 44,0.6503382930526797,0.6570866921900893,Liberal Party,150,0
+Prince Edward Island,45 to 54,Male,No degree,119,Male 45 to 54,0.304514255690723,0.5755456915382475,Liberal Party,119,0
+Prince Edward Island,45 to 54,Male,High School,141,Male 45 to 54,-0.2381659766487214,0.4407383663333915,Conservative Party,0,141
+Prince Edward Island,45 to 54,Male,College,131,Male 45 to 54,-0.14376366213397773,0.46412085900264427,Conservative Party,0,131
+Prince Edward Island,45 to 54,Male,Some university,21,Male 45 to 54,0.2650474686418489,0.5658766640910868,Liberal Party,21,0
+Prince Edward Island,45 to 54,Male,University or above,121,Male 45 to 54,0.3601810052866732,0.5890842496281332,Liberal Party,121,0
+Prince Edward Island,45 to 54,Female,No degree,95,Female 45 to 54,1.2763987508356571,0.781836140632059,Liberal Party,95,0
+Prince Edward Island,45 to 54,Female,High School,139,Female 45 to 54,0.7337185184962127,0.675620744860342,Liberal Party,139,0
+Prince Edward Island,45 to 54,Female,College,160,Female 45 to 54,0.8281208330109564,0.6959574432964557,Liberal Party,160,0
+Prince Edward Island,45 to 54,Female,Some university,35,Female 45 to 54,1.236931963786783,0.7750295267011688,Liberal Party,35,0
+Prince Edward Island,45 to 54,Female,University or above,143,Female 45 to 54,1.3320655004316073,0.79118208753384,Liberal Party,143,0
+Prince Edward Island,55 to 64,Male,No degree,133,Male 55 to 64,0.7573820574906396,0.6807850804787922,Liberal Party,133,0
+Prince Edward Island,55 to 64,Male,High School,145,Male 55 to 64,0.21470182515119518,0.5534702131152218,Liberal Party,145,0
+Prince Edward Island,55 to 64,Male,College,122,Male 55 to 64,0.30910413966593886,0.576666576738568,Liberal Party,122,0
+Prince Edward Island,55 to 64,Male,Some university,27,Male 55 to 64,0.7179152704417655,0.6721477803211171,Liberal Party,27,0
+Prince Edward Island,55 to 64,Male,University or above,110,Male 55 to 64,0.8130488070865898,0.6927588058091886,Liberal Party,110,0
+Prince Edward Island,55 to 64,Female,No degree,113,Female 55 to 64,2.0312198582700547,0.8840361917660833,Liberal Party,113,0
+Prince Edward Island,55 to 64,Female,High School,151,Female 55 to 64,1.4885396259306103,0.8158589772412358,Liberal Party,151,0
+Prince Edward Island,55 to 64,Female,College,157,Female 55 to 64,1.582941940445354,0.8296207650493713,Liberal Party,157,0
+Prince Edward Island,55 to 64,Female,Some university,44,Female 55 to 64,1.9917530712211806,0.8799284805307643,Liberal Party,44,0
+Prince Edward Island,55 to 64,Female,University or above,125,Female 55 to 64,2.086886607866005,0.889622077876457,Liberal Party,125,0
+Nova Scotia,25 to 34,Male,No degree,163,Male 25 to 34,0.6212334579524883,0.65049902732298015,Liberal Party,163,0
+Nova Scotia,25 to 34,Male,High School,265,Male 25 to 34,0.0785532256130439,0.5196282142710732,Liberal Party,265,0
+Nova Scotia,25 to 34,Male,College,229,Male 25 to 34,0.17295554012778735,0.5431314205251645,Liberal Party,229,0
+Nova Scotia,25 to 34,Male,Some university,80,Male 25 to 34,0.581766670903614,0.6414738158955761,Liberal Party,80,0
+Nova Scotia,25 to 34,Male,University or above,254,Male 25 to 34,0.6769002075484383,0.6630465050741005,Liberal Party,254,0
+Nova Scotia,25 to 34,Female,No degree,149,Female 25 to 34,1.187256478361392,0.7662500285287471,Liberal Party,149,0
+Nova Scotia,25 to 34,Female,High School,226,Female 25 to 34,0.6445762460219475,0.6557871933895391,Liberal Party,226,0
+Nova Scotia,25 to 34,Female,College,270,Female 25 to 34,0.738978560536691,0.6767724551819415,Liberal Party,270,0
+Nova Scotia,25 to 34,Female,Some university,96,Female 25 to 34,1.1477896913125176,0.7591069634975445,Liberal Party,96,0
+Nova Scotia,25 to 34,Female,University or above,322,Female 25 to 34,1.242923227957342,0.776072434492906,Liberal Party,322,0
+Nova Scotia,35 to 44,Male,No degree,168,Male 35 to 44,0.7349628012615682,0.6758933789671046,Liberal Party,168,0
+Nova Scotia,35 to 44,Male,High School,248,Male 35 to 44,0.1922825689221237,0.5479230797856413,Liberal Party,248,0
+Nova Scotia,35 to 44,Male,College,245,Male 35 to 44,0.2866848834368674,0.571184344498393,Liberal Party,245,0
+Nova Scotia,35 to 44,Male,Some university,91,Male 35 to 44,0.6954960142126939,0.6671884252067286,Liberal Party,91,0
+Nova Scotia,35 to 44,Male,University or above,246,Male 35 to 44,0.7906295508575182,0.6879664913725855,Liberal Party,246,0
+Nova Scotia,35 to 44,Female,No degree,155,Female 35 to 44,0.6277479326901182,0.6519786375579603,Liberal Party,155,0
+Nova Scotia,35 to 44,Female,High School,224,Female 35 to 44,0.08506770035067368,0.5212541094954809,Liberal Party,224,0
+Nova Scotia,35 to 44,Female,College,294,Female 35 to 44,0.17947001486541736,0.5447474604178818,Liberal Party,294,0
+Nova Scotia,35 to 44,Female,Some university,106,Female 35 to 44,0.5882811456412439,0.6429706635768397,Liberal Party,106,0
+Nova Scotia,35 to 44,Female,University or above,314,Female 35 to 44,0.6834146822860682,0.6645003924952381,Liberal Party,314,0
+Nova Scotia,45 to 54,Male,No degree,220,Male 45 to 54,0.4055961955651546,0.6000314605772239,Liberal Party,220,0
+Nova Scotia,45 to 54,Male,High School,264,Male 45 to 54,-0.13708403677428982,0.46578255863886836,Conservative Party,0,264
+Nova Scotia,45 to 54,Male,College,271,Male 45 to 54,-0.04268172225954614,0.48933118902650435,Conservative Party,0,271
+Nova Scotia,45 to 54,Male,Some university,105,Male 45 to 54,0.3661294085162805,0.5905233770364309,Liberal Party,105,0
+Nova Scotia,45 to 54,Male,University or above,251,Male 45 to 54,0.4612629451611048,0.6133137390397204,Liberal Party,251,0
+Nova Scotia,45 to 54,Female,No degree,182,Female 45 to 54,1.271626874696154,0.7810211148312934,Liberal Party,182,0
+Nova Scotia,45 to 54,Female,High School,281,Female 45 to 54,0.7289466423567097,0.6745740779490321,Liberal Party,281,0
+Nova Scotia,45 to 54,Female,College,328,Female 45 to 54,0.8233489568714534,0.6949467679092571,Liberal Party,328,0
+Nova Scotia,45 to 54,Female,Some university,130,Female 45 to 54,1.23216008764728,0.7741964164986282,Liberal Party,130,0
+Nova Scotia,45 to 54,Female,University or above,286,Female 45 to 54,1.3272936242921043,0.7903926161393868,Liberal Party,286,0
+Nova Scotia,55 to 64,Male,No degree,261,Male 55 to 64,0.7921216514281415,0.6882867086412198,Liberal Party,261,0
+Nova Scotia,55 to 64,Male,High School,279,Male 55 to 64,0.2494414190886971,0.5620390103140037,Liberal Party,279,0
+Nova Scotia,55 to 64,Male,College,250,Male 55 to 64,0.3438437336034408,0.5851239085844596,Liberal Party,250,0
+Nova Scotia,55 to 64,Male,Some university,108,Male 55 to 64,0.7526548643792674,0.6797569054432224,Liberal Party,108,0
+Nova Scotia,55 to 64,Male,University or above,241,Male 55 to 64,0.8477884010240917,0.7001030034262078,Liberal Party,241,0
+Nova Scotia,55 to 64,Female,No degree,236,Female 55 to 64,1.6358468603853233,0.8369690265251439,Liberal Party,236,0
+Nova Scotia,55 to 64,Female,High School,310,Female 55 to 64,1.093166628045879,0.7489775491800387,Liberal Party,310,0
+Nova Scotia,55 to 64,Female,College,315,Female 55 to 64,1.1875689425606226,0.7663059896235994,Liberal Party,315,0
+Nova Scotia,55 to 64,Female,Some university,146,Female 55 to 64,1.5963800733364493,0.831511842205114,Liberal Party,146,0
+Nova Scotia,55 to 64,Female,University or above,266,Female 55 to 64,1.6915136099812735,0.8444231106172989,Liberal Party,266,0
+New Brunswick,25 to 34,Male,No degree,161,Male 25 to 34,0.31409510561107945,0.5778845139449182,Liberal Party,161,0
+New Brunswick,25 to 34,Male,High School,247,Male 25 to 34,-0.22858512672836495,0.4431012549504271,Conservative Party,0,247
+New Brunswick,25 to 34,Male,College,214,Male 25 to 34,-0.1341828122136215,0.4665045390951045,Conservative Party,0,214
+New Brunswick,25 to 34,Male,Some university,38,Male 25 to 34,0.27462831856220515,0.5682287956720582,Liberal Party,38,0
+New Brunswick,25 to 34,Male,University or above,188,Male 25 to 34,0.3697618552070294,0.5914014330018458,Liberal Party,188,0
+New Brunswick,25 to 34,Female,No degree,137,Female 25 to 34,0.744748613451703,0.6780333732892124,Liberal Party,137,0
+New Brunswick,25 to 34,Female,High School,203,Female 25 to 34,0.20206838111225855,0.55034590296891,Liberal Party,203,0
+New Brunswick,25 to 34,Female,College,247,Female 25 to 34,0.296470695627002,0.5735795231844049,Liberal Party,247,0
+New Brunswick,25 to 34,Female,Some university,61,Female 25 to 34,0.7052818264028287,0.6693577789938894,Liberal Party,61,0
+New Brunswick,25 to 34,Female,University or above,255,Female 25 to 34,0.8004153630476529,0.6900633242993336,Liberal Party,255,0
+New Brunswick,35 to 44,Male,No degree,166,Male 35 to 44,0.6143285632660965,0.6489275724398824,Liberal Party,166,0
+New Brunswick,35 to 44,Male,High School,249,Male 35 to 44,0.07164833092665202,0.517904424048377,Liberal Party,249,0
+New Brunswick,35 to 44,Male,College,243,Male 35 to 44,0.1660506454413957,0.5414175385480714,Liberal Party,243,0
+New Brunswick,35 to 44,Male,Some university,72,Male 35 to 44,0.5748617762172222,0.6398842461159441,Liberal Party,72,0
+New Brunswick,35 to 44,Male,University or above,195,Male 35 to 44,0.6699953128620465,0.6615021096735563,Liberal Party,195,0
+New Brunswick,35 to 44,Female,No degree,148,Female 35 to 44,0.5122860650289524,0.625342228384622,Liberal Party,148,0
+New Brunswick,35 to 44,Female,High School,223,Female 35 to 44,-0.03039416731049216,0.49240204308284446,Conservative Party,0,223
+New Brunswick,35 to 44,Female,College,281,Female 35 to 44,0.06400814720425152,0.5159965756192385,Liberal Party,281,0
+New Brunswick,35 to 44,Female,Some university,97,Female 35 to 44,0.47281927798007806,0.6160508242407897,Liberal Party,97,0
+New Brunswick,35 to 44,Female,University or above,260,Female 35 to 44,0.5679528146249023,0.6382906637441884,Liberal Party,260,0
+New Brunswick,45 to 54,Male,No degree,206,Male 45 to 54,0.13239369459138794,0.5330501622257453,Liberal Party,206,0
+New Brunswick,45 to 54,Male,High School,274,Male 45 to 54,-0.41028653774805646,0.3988434167654061,Conservative Party,0,274
+New Brunswick,45 to 54,Male,College,232,Male 45 to 54,-0.3158842232333128,0.4216791203541528,Conservative Party,0,232
+New Brunswick,45 to 54,Male,Some university,79,Male 45 to 54,0.09292690754251387,0.5232150233521627,Liberal Party,79,0
+New Brunswick,45 to 54,Male,University or above,197,Male 45 to 54,0.18806044418733814,0.546877035124867,Liberal Party,197,0
+New Brunswick,45 to 54,Female,No degree,173,Female 45 to 54,0.8214643830082242,0.6945470995287046,Liberal Party,173,0
+New Brunswick,45 to 54,Female,High School,284,Female 45 to 54,0.2787841506687798,0.569248117106728,Liberal Party,284,0
+New Brunswick,45 to 54,Female,College,285,Female 45 to 54,0.3731864651835235,0.5922287157842819,Liberal Party,285,0
+New Brunswick,45 to 54,Female,Some university,116,Female 45 to 54,0.7819975959593501,0.6861104818305073,Liberal Party,116,0
+New Brunswick,45 to 54,Female,University or above,233,Female 45 to 54,0.8771311326041744,0.7062273687393514,Liberal Party,233,0
+New Brunswick,55 to 64,Male,No degree,259,Male 55 to 64,0.44178277250673914,0.6086837476644232,Liberal Party,259,0
+New Brunswick,55 to 64,Male,High School,275,Male 55 to 64,-0.10089745983270526,0.47479701257387547,Conservative Party,0,275
+New Brunswick,55 to 64,Male,College,210,Male 55 to 64,-0.0064951453179615815,0.49837621937902987,Conservative Party,0,210
+New Brunswick,55 to 64,Male,Some university,93,Male 55 to 64,0.40231598545786507,0.5992439731065783,Liberal Party,93,0
+New Brunswick,55 to 64,Male,University or above,183,Male 55 to 64,0.49744952210268933,0.6218597724930439,Liberal Party,183,0
+New Brunswick,55 to 64,Female,No degree,234,Female 55 to 64,0.829096428026002,0.6961638403910938,Liberal Party,234,0
+New Brunswick,55 to 64,Female,High School,319,Female 55 to 64,0.28641619568655763,0.5711185327999706,Liberal Party,319,0
+New Brunswick,55 to 64,Female,College,267,Female 55 to 64,0.3808185102013013,0.5940705024636297,Liberal Party,267,0
+New Brunswick,55 to 64,Female,Some university,114,Female 55 to 64,0.789629640977128,0.687751801787391,Liberal Party,114,0
+New Brunswick,55 to 64,Female,University or above,192,Female 55 to 64,0.8847631776219522,0.7078082952461724,Liberal Party,192,0
+Quebec,25 to 34,Male,No degree,379,Male 25 to 34,0.8584246106597408,0.7023314053111266,Liberal Party,379,0
+Quebec,25 to 34,Male,High School,399,Male 25 to 34,0.31574437832029645,0.5782867758752157,Liberal Party,399,0
+Quebec,25 to 34,Male,College,402,Male 25 to 34,0.4101466928350399,0.601123052516716,Liberal Party,402,0
+Quebec,25 to 34,Male,Some university,237,Male 25 to 34,0.8189578236108666,0.6940150702157651,Liberal Party,237,0
+Quebec,25 to 34,Male,University or above,436,Male 25 to 34,0.9140913602556908,0.7138366514754545,Liberal Party,436,0
+Quebec,25 to 34,Female,No degree,355,Female 25 to 34,1.2533549939079462,0.7778800863299461,Liberal Party,355,0
+Quebec,25 to 34,Female,High School,375,Female 25 to 34,0.7106747615685018,0.6705502403024656,Liberal Party,375,0
+Quebec,25 to 34,Female,College,424,Female 25 to 34,0.8050770760832453,0.6910594681150656,Liberal Party,424,0
+Quebec,25 to 34,Female,Some university,301,Female 25 to 34,1.213888206859072,0.7709861993000736,Liberal Party,301,0
+Quebec,25 to 34,Female,University or above,448,Female 25 to 34,1.3090217435038962,0.787349412125485,Liberal Party,448,0
+Quebec,35 to 44,Male,No degree,373,Male 35 to 44,0.8053662654195085,0.6911212055509011,Liberal Party,373,0
+Quebec,35 to 44,Male,High School,397,Male 35 to 44,0.262686033080064,0.5652964632164366,Liberal Party,397,0
+Quebec,35 to 44,Male,College,416,Male 35 to 44,0.3570883475948077,0.5883354228372902,Liberal Party,416,0
+Quebec,35 to 44,Male,Some university,290,Male 35 to 44,0.7658994783706342,0.6826332017907707,Liberal Party,290,0
+Quebec,35 to 44,Male,University or above,440,Male 35 to 44,0.8610330150154585,0.702876435593508,Liberal Party,440,0
+Quebec,35 to 44,Female,No degree,356,Female 35 to 44,0.9565002620032509,0.7224205524015749,Liberal Party,356,0
+Quebec,35 to 44,Female,High School,380,Female 35 to 44,0.4138200296638064,0.6020034956140452,Liberal Party,380,0
+Quebec,35 to 44,Female,College,431,Female 35 to 44,0.5082223441785501,0.6243896580800548,Liberal Party,431,0
+Quebec,35 to 44,Female,Some university,339,Female 35 to 44,0.9170334749543766,0.7144372703776491,Liberal Party,339,0
+Quebec,35 to 44,Female,University or above,447,Female 35 to 44,1.012167011599201,0.7334440226939183,Liberal Party,447,0
+Quebec,45 to 54,Male,No degree,404,Male 45 to 54,0.40864350782331393,0.6007625729135093,Liberal Party,404,0
+Quebec,45 to 54,Male,High School,420,Male 45 to 54,-0.13403672451613047,0.4665408972948298,Conservative Party,0,420
+Quebec,45 to 54,Male,College,417,Male 45 to 54,-0.03963441000138679,0.49009269440338044,Conservative Party,0,417
+Quebec,45 to 54,Male,Some university,298,Male 45 to 54,0.36917672077443986,0.5912600301781324,Liberal Party,298,0
+Quebec,45 to 54,Male,University or above,433,Male 45 to 54,0.4643102574192641,0.6140361895814066,Liberal Party,433,0
+Quebec,45 to 54,Female,No degree,381,Female 45 to 54,1.0405101469199676,0.7389484272819794,Liberal Party,381,0
+Quebec,45 to 54,Female,High School,425,Female 45 to 54,0.49782991458052317,0.621949217711435,Liberal Party,425,0
+Quebec,45 to 54,Female,College,434,Female 45 to 54,0.5922322290952668,0.6438771586334555,Liberal Party,434,0
+Quebec,45 to 54,Female,Some university,341,Female 45 to 54,1.0010433598710935,0.7312636661707822,Liberal Party,341,0
+Quebec,45 to 54,Female,University or above,439,Female 45 to 54,1.0961768965159178,0.7495430860061101,Liberal Party,439,0
+Quebec,55 to 64,Male,No degree,427,Male 55 to 64,0.7424695687832408,0.677535646717856,Liberal Party,427,0
+Quebec,55 to 64,Male,High School,437,Male 55 to 64,0.19978933644379637,0.5497818540438331,Liberal Party,437,0
+Quebec,55 to 64,Male,College,408,Male 55 to 64,0.29419165095854005,0.5730220073935067,Liberal Party,408,0
+Quebec,55 to 64,Male,Some university,305,Male 55 to 64,0.7030027817343667,0.6688531909771349,Liberal Party,305,0
+Quebec,55 to 64,Male,University or above,421,Male 55 to 64,0.798136318379191,0.6895756804769769,Liberal Party,421,0
+Quebec,55 to 64,Female,No degree,422,Female 55 to 64,0.9076587665019717,0.7125208351490352,Liberal Party,422,0
+Quebec,55 to 64,Female,High School,444,Female 55 to 64,0.36497853416252735,0.5902450603023217,Liberal Party,444,0
+Quebec,55 to 64,Female,College,426,Female 55 to 64,0.459380848677271,0.6128672859620234,Liberal Party,426,0
+Quebec,55 to 64,Female,Some university,345,Female 55 to 64,0.8681919794530977,0.7043693473140018,Liberal Party,345,0
+Quebec,55 to 64,Female,University or above,419,Female 55 to 64,0.9633255160979219,0.7237871345661698,Liberal Party,419,0
+Ontario,25 to 34,Male,No degree,395,Male 25 to 34,0.34027345080103544,0.5842569458747146,Liberal Party,395,0
+Ontario,25 to 34,Male,High School,454,Male 25 to 34,-0.20240678153840896,0.44957035609897794,Conservative Party,0,454
+Ontario,25 to 34,Male,College,449,Male 25 to 34,-0.1080044670236655,0.4730250999194434,Conservative Party,0,449
+Ontario,25 to 34,Male,Some university,280,Male 25 to 34,0.30080666375216114,0.5746397006190186,Liberal Party,280,0
+Ontario,25 to 34,Male,University or above,463,Male 25 to 34,0.3959402003969854,0.5977118600161488,Liberal Party,463,0
+Ontario,25 to 34,Female,No degree,367,Female 25 to 34,0.7579169777029588,0.6809013163599126,Liberal Party,367,0
+Ontario,25 to 34,Female,High School,442,Female 25 to 34,0.21523674536351445,0.553602410013058,Liberal Party,442,0
+Ontario,25 to 34,Female,College,456,Female 25 to 34,0.3096390598782579,0.5767971572985989,Liberal Party,456,0
+Ontario,25 to 34,Female,Some university,303,Female 25 to 34,0.7184501906540846,0.6722656472328956,Liberal Party,303,0
+Ontario,25 to 34,Female,University or above,468,Female 25 to 34,0.8135837272989088,0.692872648648629,Liberal Party,468,0
+Ontario,35 to 44,Male,No degree,391,Male 35 to 44,0.29621021568325656,0.5735158122021548,Liberal Party,391,0
+Ontario,35 to 44,Male,High School,450,Male 35 to 44,-0.24647001665618795,0.43869253816264064,Conservative Party,0,450
+Ontario,35 to 44,Male,College,446,Male 35 to 44,-0.15206770214144427,0.46205616592043436,Conservative Party,0,446
+Ontario,35 to 44,Male,Some university,292,Male 35 to 44,0.25674342863438226,0.563835586594056,Liberal Party,292,0
+Ontario,35 to 44,Male,University or above,461,Male 35 to 44,0.35187696527920653,0.5870726639875739,Liberal Party,461,0
+Ontario,35 to 44,Female,No degree,372,Female 35 to 44,0.5054715816858409,0.623744309009275,Liberal Party,372,0
+Ontario,35 to 44,Female,High School,443,Female 35 to 44,-0.03720865065360357,0.4906989104124028,Conservative Party,0,443
+Ontario,35 to 44,Female,College,459,Female 35 to 44,0.05719366386114011,0.5142945195926953,Liberal Party,459,0
+Ontario,35 to 44,Female,Some university,332,Female 35 to 44,0.46600479463696665,0.614437710010613,Liberal Party,332,0
+Ontario,35 to 44,Female,University or above,467,Female 35 to 44,0.5611383312817909,0.6367158872415727,Liberal Party,467,0
+Ontario,45 to 54,Male,No degree,428,Male 45 to 54,-0.02038724028960015,0.49490336645659017,Conservative Party,0,428
+Ontario,45 to 54,Male,High School,458,Male 45 to 54,-0.5630674726290446,0.3628380032507952,Conservative Party,0,458
+Ontario,45 to 54,Male,College,452,Male 45 to 54,-0.4686651581143009,0.3849322314025067,Conservative Party,0,452
+Ontario,45 to 54,Male,Some university,326,Male 45 to 54,-0.059854027338474225,0.4850409588015635,Conservative Party,0,326
+Ontario,45 to 54,Male,University or above,462,Male 45 to 54,0.03527950930635004,0.5088189626399809,Liberal Party,462,0
+Ontario,45 to 54,Female,No degree,415,Female 45 to 54,0.5705943713450432,0.638900311920172,Liberal Party,415,0
+Ontario,45 to 54,Female,High School,460,Female 45 to 54,0.027914139005598804,0.5069780816476729,Liberal Party,460,0
+Ontario,45 to 54,Female,College,464,Female 45 to 54,0.12231645352034248,0.5305410450225363,Liberal Party,464,0
+Ontario,45 to 54,Female,Some university,346,Female 45 to 54,0.5311275842961691,0.6297460646828483,Liberal Party,346,0
+Ontario,45 to 54,Female,University or above,466,Female 45 to 54,0.6262611209409934,0.6516412000779487,Liberal Party,466,0
+Ontario,55 to 64,Male,No degree,441,Male 55 to 64,0.19519791232460304,0.5486451188066184,Liberal Party,441,0
+Ontario,55 to 64,Male,High School,455,Male 55 to 64,-0.34748232001484136,0.4139930847686966,Conservative Party,0,455
+Ontario,55 to 64,Male,College,445,Male 55 to 64,-0.2530800055000977,0.4370655505349522,Conservative Party,0,445
+Ontario,55 to 64,Male,Some university,308,Male 55 to 64,0.15573112527572897,0.5388542879310391,Liberal Party,308,0
+Ontario,55 to 64,Male,University or above,453,Male 55 to 64,0.25086466192055323,0.5623893122001448,Liberal Party,453,0
+Ontario,55 to 64,Female,No degree,438,Female 55 to 64,0.6276915935596175,0.6519658539593011,Liberal Party,438,0
+Ontario,55 to 64,Female,High School,465,Female 55 to 64,0.08501136122017305,0.5212400501465037,Liberal Party,465,0
+Ontario,55 to 64,Female,College,457,Female 55 to 64,0.17941367573491673,0.5447334884098612,Liberal Party,457,0
+Ontario,55 to 64,Female,Some university,329,Female 55 to 64,0.5882248065107434,0.6429577302962731,Liberal Party,329,0
+Ontario,55 to 64,Female,University or above,451,Female 55 to 64,0.6833583431555676,0.6644878321544406,Liberal Party,451,0
+Manitoba,25 to 34,Male,No degree,239,Male 25 to 34,-0.43079603124287064,0.3939362626865335,Conservative Party,0,239
+Manitoba,25 to 34,Male,High School,343,Male 25 to 34,-0.9734762635823151,0.27418815165396704,Conservative Party,0,343
+Manitoba,25 to 34,Male,College,253,Male 25 to 34,-0.8790739490675716,0.29336971615927343,Conservative Party,0,253
+Manitoba,25 to 34,Male,Some university,118,Male 25 to 34,-0.47026281829174493,0.3845540399305629,Conservative Party,0,118
+Manitoba,25 to 34,Male,University or above,312,Male 25 to 34,-0.37512928164692066,0.40730219016240904,Conservative Party,0,312
+Manitoba,25 to 34,Female,No degree,191,Female 25 to 34,-0.18021954698935105,0.4550666636086194,Conservative Party,0,191
+Manitoba,25 to 34,Female,High School,323,Female 25 to 34,-0.7228997793287955,0.3267547516505215,Conservative Party,0,323
+Manitoba,25 to 34,Female,College,295,Female 25 to 34,-0.628497464814052,0.3478513111129877,Conservative Party,0,295
+Manitoba,25 to 34,Female,Some university,132,Female 25 to 34,-0.21968633403822535,0.44529824147611186,Conservative Party,0,132
+Manitoba,25 to 34,Female,University or above,349,Female 25 to 34,-0.12455279739340108,0.46890199324385884,Conservative Party,0,349
+Manitoba,35 to 44,Male,No degree,219,Male 35 to 44,-0.004486550992453986,0.49887836413334963,Conservative Party,0,219
+Manitoba,35 to 44,Male,High School,324,Male 35 to 44,-0.5471667833318985,0.36652198637378597,Conservative Party,0,324
+Manitoba,35 to 44,Male,College,269,Male 35 to 44,-0.4527644688171548,0.3887036902109382,Conservative Party,0,269
+Manitoba,35 to 44,Male,Some university,128,Male 35 to 44,-0.04395333804132828,0.48901343417453247,Conservative Party,0,128
+Manitoba,35 to 44,Male,University or above,304,Male 35 to 44,0.051180198603495985,0.5127922574226113,Liberal Party,304,0
+Manitoba,35 to 44,Female,No degree,185,Female 35 to 44,-0.17575662080901822,0.4561736046268635,Conservative Party,0,185
+Manitoba,35 to 44,Female,High School,299,Female 35 to 44,-0.7184368531484627,0.32773729135373736,Conservative Party,0,299
+Manitoba,35 to 44,Female,College,313,Female 35 to 44,-0.624034538633719,0.3488644156274688,Conservative Party,0,313
+Manitoba,35 to 44,Female,Some university,143,Female 35 to 44,-0.2152234078578925,0.44640088604413786,Conservative Party,0,143
+Manitoba,35 to 44,Female,University or above,342,Female 35 to 44,-0.12008987121306824,0.4700135611828277,Conservative Party,0,342
+Manitoba,45 to 54,Male,No degree,263,Male 45 to 54,-0.40235079929875184,0.4007476663563548,Conservative Party,0,263
+Manitoba,45 to 54,Male,High School,327,Male 45 to 54,-0.9450310316381962,0.27988521874615047,Conservative Party,0,327
+Manitoba,45 to 54,Male,College,277,Male 45 to 54,-0.8506287171234526,0.2993009863944963,Conservative Party,0,277
+Manitoba,45 to 54,Male,Some university,143,Male 45 to 54,-0.4418175863476259,0.39130796013328567,Conservative Party,0,143
+Manitoba,45 to 54,Male,University or above,287,Male 45 to 54,-0.34668404970280164,0.41418676067683896,Conservative Party,0,287
+Manitoba,45 to 54,Female,No degree,217,Female 45 to 54,0.0740253038957317,0.5184978797723198,Liberal Party,217,0
+Manitoba,45 to 54,Female,High School,330,Female 45 to 54,-0.4686549284437127,0.3849346533761166,Conservative Party,0,330
+Manitoba,45 to 54,Female,College,325,Female 45 to 54,-0.374252613928969,0.4075138411742368,Conservative Party,0,325
+Manitoba,45 to 54,Female,Some university,159,Female 45 to 54,0.03455851684685762,0.5086387694617135,Liberal Party,159,0
+Manitoba,45 to 54,Female,University or above,311,Female 45 to 54,0.1296920534916819,0.5323776433491751,Liberal Party,311,0
+Manitoba,55 to 64,Male,No degree,293,Male 55 to 64,-0.2698265646401574,0.4329496736578863,Conservative Party,0,293
+Manitoba,55 to 64,Male,High School,321,Male 55 to 64,-0.8125067969796018,0.3073565698645172,Conservative Party,0,321
+Manitoba,55 to 64,Male,College,256,Male 55 to 64,-0.7181044824648581,0.3278105253028085,Conservative Party,0,256
+Manitoba,55 to 64,Male,Some university,135,Male 55 to 64,-0.3092933516890315,0.42328723306945815,Conservative Party,0,135
+Manitoba,55 to 64,Male,University or above,258,Male 55 to 64,-0.21415981504420722,0.44666374364908296,Conservative Party,0,258
+Manitoba,55 to 64,Female,No degree,252,Female 55 to 64,0.1476488658066606,0.5368453045468863,Liberal Party,252,0
+Manitoba,55 to 64,Female,High School,338,Female 55 to 64,-0.3950313665327838,0.40250669065390077,Conservative Party,0,338
+Manitoba,55 to 64,Female,College,307,Female 55 to 64,-0.30062905201804013,0.4254037133998807,Conservative Party,0,307
+Manitoba,55 to 64,Female,Some university,158,Female 55 to 64,0.10818207875778652,0.5270191735635217,Liberal Party,158,0
+Manitoba,55 to 64,Female,University or above,278,Female 55 to 64,0.20331561540261078,0.5506545307446232,Liberal Party,278,0
+Saskatchewan,25 to 34,Male,No degree,196,Male 25 to 34,-1.0320338261799136,0.26268999457532727,Conservative Party,0,196
+Saskatchewan,25 to 34,Male,High School,337,Male 25 to 34,-1.574714058519358,0.171545403469559,Conservative Party,0,337
+Saskatchewan,25 to 34,Male,College,221,Male 25 to 34,-1.4803117440046145,0.18538033682061136,Conservative Party,0,221
+Saskatchewan,25 to 34,Male,Some university,109,Male 25 to 34,-1.0715006132287879,0.25511781379091764,Conservative Party,0,109
+Saskatchewan,25 to 34,Male,University or above,291,Male 25 to 34,-0.9763670765839636,0.27361322952082745,Conservative Party,0,291
+Saskatchewan,25 to 34,Female,No degree,172,Female 25 to 34,-1.0246954533863812,0.26411379279904657,Conservative Party,0,172
+Saskatchewan,25 to 34,Female,High School,306,Female 25 to 34,-1.5673756857258256,0.17259083036179612,Conservative Party,0,306
+Saskatchewan,25 to 34,Female,College,289,Female 25 to 34,-1.4729733712110822,0.1864910968146028,Conservative Party,0,289
+Saskatchewan,25 to 34,Female,Some university,129,Female 25 to 34,-1.0641622404352555,0.25651484894981974,Conservative Party,0,129
+Saskatchewan,25 to 34,Female,University or above,340,Female 25 to 34,-0.9690287037904313,0.2750741444737533,Conservative Party,0,340
+Saskatchewan,35 to 44,Male,No degree,187,Male 35 to 44,-1.5216011441834338,0.17922586378405161,Conservative Party,0,187
+Saskatchewan,35 to 44,Male,High School,316,Male 35 to 44,-2.0642813765228785,0.11261726222128347,Conservative Party,0,316
+Saskatchewan,35 to 44,Male,College,222,Male 35 to 44,-1.9698790620081348,0.12240187734750575,Conservative Party,0,222
+Saskatchewan,35 to 44,Male,Some university,117,Male 35 to 44,-1.5610679312323081,0.17349345924448337,Conservative Party,0,117
+Saskatchewan,35 to 44,Male,University or above,273,Male 35 to 44,-1.4659343945874839,0.18756135261808166,Conservative Party,0,273
+Saskatchewan,35 to 44,Female,No degree,165,Female 35 to 44,-0.8837175926855189,0.2924079951234901,Conservative Party,0,165
+Saskatchewan,35 to 44,Female,High School,283,Female 35 to 44,-1.4263978250249634,0.19366056537500315,Conservative Party,0,283
+Saskatchewan,35 to 44,Female,College,296,Female 35 to 44,-1.3319955105102197,0.20882947594613202,Conservative Party,0,296
+Saskatchewan,35 to 44,Female,Some university,142,Female 35 to 44,-0.9231843797343932,0.28430949953181656,Conservative Party,0,142
+Saskatchewan,35 to 44,Female,University or above,318,Female 35 to 44,-0.8280508430895689,0.3040573668216477,Conservative Party,0,318
+Saskatchewan,45 to 54,Male,No degree,227,Male 45 to 54,-1.414827392115348,0.19547376626679172,Conservative Party,0,227
+Saskatchewan,45 to 54,Male,High School,317,Male 45 to 54,-1.9575076244547924,0.12373703299484624,Conservative Party,0,317
+Saskatchewan,45 to 54,Male,College,218,Male 45 to 54,-1.8631053099400487,0.13434151320778168,Conservative Party,0,218
+Saskatchewan,45 to 54,Male,Some university,126,Male 45 to 54,-1.454294179164222,0.18934156726974968,Conservative Party,0,126
+Saskatchewan,45 to 54,Male,University or above,238,Male 45 to 54,-1.3591606425193978,0.2043767537326725,Conservative Party,0,238
+Saskatchewan,45 to 54,Female,No degree,179,Female 45 to 54,-1.5251083261060687,0.17871052375007063,Conservative Party,0,179
+Saskatchewan,45 to 54,Female,High School,300,Female 45 to 54,-2.067788558445513,0.11226724924197903,Conservative Party,0,300
+Saskatchewan,45 to 54,Female,College,309,Female 45 to 54,-1.9733862439307694,0.1220256357100976,Conservative Party,0,309
+Saskatchewan,45 to 54,Female,Some university,154,Female 45 to 54,-1.5645751131549428,0.17299112797106297,Conservative Party,0,154
+Saskatchewan,45 to 54,Female,University or above,263,Female 45 to 54,-1.4694415765101185,0.18702750642575858,Conservative Party,0,263
+Saskatchewan,55 to 64,Male,No degree,262,Male 55 to 64,-1.7573023819180762,0.14712851943085833,Conservative Party,0,262
+Saskatchewan,55 to 64,Male,High School,320,Male 55 to 64,-2.2999826142575204,0.09112440090475572,Conservative Party,0,320
+Saskatchewan,55 to 64,Male,College,204,Male 55 to 64,-2.2055802997427767,0.09925049440842541,Conservative Party,0,204
+Saskatchewan,55 to 64,Male,Some university,140,Male 55 to 64,-1.7967691689669503,0.1422448070946746,Conservative Party,0,140
+Saskatchewan,55 to 64,Male,University or above,208,Male 55 to 64,-1.701635632322126,0.15425176281454336,Conservative Party,0,208
+Saskatchewan,55 to 64,Female,No degree,201,Female 55 to 64,-1.4370598329178983,0.19200106323852006,Conservative Party,0,201
+Saskatchewan,55 to 64,Female,High School,334,Female 55 to 64,-1.9797400652573427,0.12134654981300179,Conservative Party,0,334
+Saskatchewan,55 to 64,Female,College,297,Female 55 to 64,-1.885337750742599,0.13177697063643817,Conservative Party,0,297
+Saskatchewan,55 to 64,Female,Some university,156,Female 55 to 64,-1.4765266199667724,0.18595262615323307,Conservative Party,0,156
+Saskatchewan,55 to 64,Female,University or above,231,Female 55 to 64,-1.381393083321948,0.2007853576522894,Conservative Party,0,231
+Alberta,25 to 34,Male,No degree,351,Male 25 to 34,-0.7791281817877893,0.3145078132566271,Conservative Party,0,351
+Alberta,25 to 34,Male,High School,410,Male 25 to 34,-1.3218084141272337,0.21051757783742983,Conservative Party,0,410
+Alberta,25 to 34,Male,College,363,Male 25 to 34,-1.2274060996124903,0.22663574139215104,Conservative Party,0,363
+Alberta,25 to 34,Male,Some university,186,Male 25 to 34,-0.8185949688366636,0.30606199037788695,Conservative Party,0,186
+Alberta,25 to 34,Male,University or above,406,Male 25 to 34,-0.7234614321918393,0.3266312078611698,Conservative Party,0,406
+Alberta,25 to 34,Female,No degree,336,Female 25 to 34,-0.7892920047304,0.3123207099430168,Conservative Party,0,336
+Alberta,25 to 34,Female,High School,388,Female 25 to 34,-1.3319722370698444,0.2088333212036295,Conservative Party,0,388
+Alberta,25 to 34,Female,College,390,Female 25 to 34,-1.237569922555101,0.22485925911654597,Conservative Party,0,390
+Alberta,25 to 34,Female,Some university,242,Female 25 to 34,-0.8287587917792743,0.3039075810723457,Conservative Party,0,242
+Alberta,25 to 34,Female,University or above,432,Female 25 to 34,-0.73362525513445,0.32439969482601116,Conservative Party,0,432
+Alberta,35 to 44,Male,No degree,347,Male 35 to 44,-0.933745968223893,0.28216535713020496,Conservative Party,0,347
+Alberta,35 to 44,Male,High School,383,Male 35 to 44,-1.4764262005633375,0.1859678275441953,Conservative Party,0,383
+Alberta,35 to 44,Male,College,366,Male 35 to 44,-1.3820238860485938,0.20068415146720675,Conservative Party,0,366
+Alberta,35 to 44,Male,Some university,193,Male 35 to 44,-0.9732127552727673,0.27424059530181866,Conservative Party,0,193
+Alberta,35 to 44,Male,University or above,400,Male 35 to 44,-0.878079218627943,0.29357597006123654,Conservative Party,0,400
+Alberta,35 to 44,Female,No degree,331,Female 35 to 44,-0.9639471428022759,0.2760886075365681,Conservative Party,0,331
+Alberta,35 to 44,Female,High School,371,Female 35 to 44,-1.5066273751417205,0.18143915392579213,Conservative Party,0,371
+Alberta,35 to 44,Female,College,394,Female 35 to 44,-1.4122250606269768,0.1958833430847272,Conservative Party,0,394
+Alberta,35 to 44,Female,Some university,230,Female 35 to 44,-1.0034139298511502,0.2682707317253281,Conservative Party,0,230
+Alberta,35 to 44,Female,University or above,423,Female 35 to 44,-0.9082803932063259,0.28735185083386033,Conservative Party,0,423
+Alberta,45 to 54,Male,No degree,352,Male 45 to 54,-1.058298707162566,0.2576347081836111,Conservative Party,0,352
+Alberta,45 to 54,Male,High School,378,Male 45 to 54,-1.6009789395020104,0.16784483903581346,Conservative Party,0,378
+Alberta,45 to 54,Male,College,365,Male 45 to 54,-1.5065766249872667,0.18144669140919634,Conservative Party,0,365
+Alberta,45 to 54,Male,Some university,180,Male 45 to 54,-1.09776549421144,0.2501588075704786,Conservative Party,0,180
+Alberta,45 to 54,Male,University or above,382,Male 45 to 54,-1.0026319575666158,0.26842426190663315,Conservative Party,0,382
+Alberta,45 to 54,Female,No degree,344,Female 45 to 54,-1.105010190562242,0.2488023131510118,Conservative Party,0,344
+Alberta,45 to 54,Female,High School,386,Female 45 to 54,-1.6476904229016864,0.16142133988491653,Conservative Party,0,386
+Alberta,45 to 54,Female,College,396,Female 45 to 54,-1.5532881083869428,0.17461187041274734,Conservative Party,0,396
+Alberta,45 to 54,Female,Some university,228,Female 45 to 54,-1.144476977611116,0.24149933105102991,Conservative Party,0,228
+Alberta,45 to 54,Female,University or above,385,Female 45 to 54,-1.0493434409662918,0.2593511981027995,Conservative Party,0,385
+Alberta,55 to 64,Male,No degree,354,Male 55 to 64,-1.2755612813528723,0.2183067389045417,Conservative Party,0,354
+Alberta,55 to 64,Male,High School,370,Male 55 to 64,-1.8182415136923167,0.13964501118822653,Conservative Party,0,370
+Alberta,55 to 64,Male,College,358,Male 55 to 64,-1.723839199177573,0.15137731122266856,Conservative Party,0,358
+Alberta,55 to 64,Male,Some university,171,Male 55 to 64,-1.3150280684017464,0.2116466826748004,Conservative Party,0,171
+Alberta,55 to 64,Male,University or above,364,Male 55 to 64,-1.219894531756922,0.22795501155750594,Conservative Party,0,364
+Alberta,55 to 64,Female,No degree,350,Female 55 to 64,-1.2616442770075487,0.2206909689578907,Conservative Party,0,350
+Alberta,55 to 64,Female,High School,398,Female 55 to 64,-1.804324509346993,0.14132546011611102,Conservative Party,0,398
+Alberta,55 to 64,Female,College,377,Female 55 to 64,-1.7099221948322494,0.153173807724953,Conservative Party,0,377
+Alberta,55 to 64,Female,Some university,200,Female 55 to 64,-1.3011110640564227,0.21397808608106725,Conservative Party,0,200
+Alberta,55 to 64,Female,University or above,361,Female 55 to 64,-1.2059775274115985,0.23041355485505544,Conservative Party,0,361
+British Columbia,25 to 34,Male,No degree,333,Male 25 to 34,0.23988705213471984,0.5596858148536243,Liberal Party,333,0
+British Columbia,25 to 34,Male,High School,411,Male 25 to 34,-0.30279318020472457,0.42487480946436823,Conservative Party,0,411
+British Columbia,25 to 34,Male,College,359,Male 25 to 34,-0.2083908656899811,0.44809000462954635,Conservative Party,0,359
+British Columbia,25 to 34,Male,Some university,225,Male 25 to 34,0.20042026508584554,0.5499380177060758,Liberal Party,225,0
+British Columbia,25 to 34,Male,University or above,413,Male 25 to 34,0.2955538017306698,0.5733552486096912,Liberal Party,413,0
+British Columbia,25 to 34,Female,No degree,288,Female 25 to 34,0.44174572324176187,0.6086749229443806,Liberal Party,288,0
+British Columbia,25 to 34,Female,High School,384,Female 25 to 34,-0.10093450909768253,0.4747877737996029,Conservative Party,0,384
+British Columbia,25 to 34,Female,College,376,Female 25 to 34,-0.006532194582939077,0.49836695716103024,Conservative Party,0,376
+British Columbia,25 to 34,Female,Some university,276,Female 25 to 34,0.40227893619288757,0.5992350756693977,Liberal Party,276,0
+British Columbia,25 to 34,Female,University or above,435,Female 25 to 34,0.49741247283771184,0.6218510603117956,Liberal Party,435,0
+British Columbia,35 to 44,Male,No degree,335,Male 35 to 44,0.3149540731216557,0.5780940312981306,Liberal Party,335,0
+British Columbia,35 to 44,Male,High School,389,Male 35 to 44,-0.22772615921778883,0.4433132262958311,Conservative Party,0,389
+British Columbia,35 to 44,Male,College,362,Male 35 to 44,-0.13332384470304515,0.46671832339542385,Conservative Party,0,362
+British Columbia,35 to 44,Male,Some university,211,Male 35 to 44,0.2754872860727814,0.5684395265480362,Liberal Party,211,0
+British Columbia,35 to 44,Male,University or above,405,Male 35 to 44,0.37062082271760566,0.5916089825665981,Liberal Party,405,0
+British Columbia,35 to 44,Female,No degree,302,Female 35 to 44,0.1418044226092453,0.5353918191694041,Liberal Party,302,0
+British Columbia,35 to 44,Female,High School,374,Female 35 to 44,-0.4008758097301992,0.401101935387692,Conservative Party,0,374
+British Columbia,35 to 44,Female,College,393,Female 35 to 44,-0.3064734952154555,0.42397575124272585,Conservative Party,0,393
+British Columbia,35 to 44,Female,Some university,272,Female 35 to 44,0.10233763556037101,0.5255621034751832,Liberal Party,272,0
+British Columbia,35 to 44,Female,University or above,430,Female 35 to 44,0.19747117220519528,0.5492079919671428,Liberal Party,430,0
+British Columbia,45 to 54,Male,No degree,353,Male 45 to 54,0.011222840953640123,0.5028056807900091,Liberal Party,353,0
+British Columbia,45 to 54,Male,High School,401,Male 45 to 54,-0.5314573913858043,0.37017703882209935,Conservative Party,0,401
+British Columbia,45 to 54,Male,College,369,Male 45 to 54,-0.4370550768710606,0.3924429087656211,Conservative Party,0,369
+British Columbia,45 to 54,Male,Some university,209,Male 45 to 54,-0.02824394609523395,0.4929394828298867,Conservative Party,0,209
+British Columbia,45 to 54,Male,University or above,409,Male 45 to 54,0.06688959054959032,0.5167161654556958,Liberal Party,409,0
+British Columbia,45 to 54,Female,No degree,348,Female 45 to 54,0.42874923881568394,0.6055749586930577,Liberal Party,348,0
+British Columbia,45 to 54,Female,High School,414,Female 45 to 54,-0.11393099352376046,0.47154802116338507,Conservative Party,0,414
+British Columbia,45 to 54,Female,College,412,Female 45 to 54,-0.01952867900901678,0.4951179854009687,Conservative Party,0,412
+British Columbia,45 to 54,Female,Some university,282,Female 45 to 54,0.38928245176680987,0.5961099522403792,Liberal Party,282,0
+British Columbia,45 to 54,Female,University or above,418,Female 45 to 54,0.48441598841163414,0.6187901025027326,Liberal Party,418,0
+British Columbia,55 to 64,Male,No degree,360,Male 55 to 64,0.1922973356719786,0.5479267375568802,Liberal Party,360,0
+British Columbia,55 to 64,Male,High School,403,Male 55 to 64,-0.3503828966674658,0.4132895727187511,Conservative Party,0,403
+British Columbia,55 to 64,Male,College,368,Male 55 to 64,-0.2559805821527221,0.4363520255675941,Conservative Party,0,368
+British Columbia,55 to 64,Male,Some university,194,Male 55 to 64,0.15283054862310452,0.5381334419060946,Liberal Party,194,0
+British Columbia,55 to 64,Male,University or above,387,Male 55 to 64,0.2479640852679288,0.5616753296125047,Liberal Party,387,0
+British Columbia,55 to 64,Female,No degree,357,Female 55 to 64,0.3771748183287622,0.5931915231602554,Liberal Party,357,0
+British Columbia,55 to 64,Female,High School,429,Female 55 to 64,-0.1655054140106822,0.4587178370665136,Conservative Party,0,429
+British Columbia,55 to 64,Female,College,407,Female 55 to 64,-0.07110309949593852,0.4822317103509127,Conservative Party,0,407
+British Columbia,55 to 64,Female,Some university,257,Female 55 to 64,0.33770803127988813,0.5836336691229808,Liberal Party,257,0
+British Columbia,55 to 64,Female,University or above,392,Female 55 to 64,0.4328415679247124,0.606552004082259,Liberal Party,392,0
+Yukon,25 to 34,Male,No degree,34,Male 25 to 34,0.487199413992224,0.6194464642878509,Liberal Party,34,0
+Yukon,25 to 34,Male,High School,70,Male 25 to 34,-0.055480818347220406,0.48613335216595804,Conservative Party,0,70
+Yukon,25 to 34,Male,College,52,Male 25 to 34,0.03892149616752305,0.5097291458631938,Liberal Party,52,0
+Yukon,25 to 34,Male,Some university,6,Male 25 to 34,0.4477326269433497,0.6101000106507716,Liberal Party,6,0
+Yukon,25 to 34,Male,University or above,70,Male 25 to 34,0.542866163588174,0.632478908181622,Liberal Party,70,0
+Yukon,25 to 34,Female,No degree,23,Female 25 to 34,0.9262871112301982,0.7163214141189339,Liberal Party,23,0
+Yukon,25 to 34,Female,High School,72,Female 25 to 34,0.38360687889075384,0.5947427428716677,Liberal Party,72,0
+Yukon,25 to 34,Female,College,75,Female 25 to 34,0.4780091934054973,0.6172776647139419,Liberal Party,75,0
+Yukon,25 to 34,Female,Some university,10,Female 25 to 34,0.886820324181324,0.7082335635286032,Liberal Party,10,0
+Yukon,25 to 34,Female,University or above,99,Female 25 to 34,0.9819538608261482,0.7274957329575945,Liberal Party,99,0
+Yukon,35 to 44,Male,No degree,25,Male 35 to 44,-2.0402216091573115,0.11504416831234404,Conservative Party,0,25
+Yukon,35 to 44,Male,High School,46,Male 35 to 44,-2.5829018414967564,0.07024696834319777,Conservative Party,0,46
+Yukon,35 to 44,Male,College,52,Male 35 to 44,-2.4884995269820127,0.07666834885950595,Conservative Party,0,52
+Yukon,35 to 44,Male,Some university,10,Male 35 to 44,-2.079688396206186,0.11108673275757153,Conservative Party,0,10
+Yukon,35 to 44,Male,University or above,78,Male 35 to 44,-1.9845548595613618,0.12083412412370496,Conservative Party,0,78
+Yukon,35 to 44,Female,No degree,18,Female 35 to 44,-0.17492521852460075,0.45637986578332485,Conservative Party,0,18
+Yukon,35 to 44,Female,High School,42,Female 35 to 44,-0.7176054508640453,0.32792049675503293,Conservative Party,0,42
+Yukon,35 to 44,Female,College,81,Female 35 to 44,-0.6232031363493016,0.34905329905997245,Conservative Party,0,81
+Yukon,35 to 44,Female,Some university,13,Female 35 to 44,-0.21439200557347504,0.4466063572531643,Conservative Party,0,13
+Yukon,35 to 44,Female,University or above,101,Female 35 to 44,-0.11925846892865077,0.47022066931965134,Conservative Party,0,101
+Yukon,45 to 54,Male,No degree,42,Male 45 to 54,-0.5497867663729379,0.3659138822353273,Conservative Party,0,42
+Yukon,45 to 54,Male,High School,59,Male 45 to 54,-1.0924669987123823,0.25115401116828173,Conservative Party,0,59
+Yukon,45 to 54,Male,College,50,Male 45 to 54,-0.9980646841976386,0.26932209766003185,Conservative Party,0,50
+Yukon,45 to 54,Male,Some university,7,Male 45 to 54,-0.589253553421812,0.3568061421341963,Conservative Party,0,7
+Yukon,45 to 54,Male,University or above,65,Male 45 to 54,-0.4941200167769877,0.37892347840335333,Conservative Party,0,65
+Yukon,45 to 54,Female,No degree,28,Female 45 to 54,-0.32096896371026984,0.4204396221375137,Conservative Party,0,28
+Yukon,45 to 54,Female,High School,60,Female 45 to 54,-0.8636491960497142,0.29657748829340047,Conservative Party,0,60
+Yukon,45 to 54,Female,College,89,Female 45 to 54,-0.7692468815349706,0.3166420434237937,Conservative Party,0,89
+Yukon,45 to 54,Female,Some university,13,Female 45 to 54,-0.3604357507591439,0.4108540870644271,Conservative Party,0,13
+Yukon,45 to 54,Female,University or above,85,Female 45 to 54,-0.26530221411431965,0.43406075611914463,Conservative Party,0,85
+Yukon,55 to 64,Male,No degree,46,Male 55 to 64,-0.8340351506276007,0.3027925354332336,Conservative Party,0,46
+Yukon,55 to 64,Male,High School,42,Male 55 to 64,-1.376715382967045,0.2015370417384041,Conservative Party,0,42
+Yukon,55 to 64,Male,College,60,Male 55 to 64,-1.2823130684523014,0.21715674539727467,Conservative Party,0,60
+Yukon,55 to 64,Male,Some university,6,Male 55 to 64,-0.8735019376764748,0.2945261444526835,Conservative Party,0,6
+Yukon,55 to 64,Male,University or above,64,Male 55 to 64,-0.7783684010316505,0.31467163948294696,Conservative Party,0,64
+Yukon,55 to 64,Female,No degree,32,Female 55 to 64,1.7885233802936815,0.8567461432006117,Liberal Party,32,0
+Yukon,55 to 64,Female,High School,77,Female 55 to 64,1.2458431479542371,0.7765794608225712,Liberal Party,77,0
+Yukon,55 to 64,Female,College,76,Female 55 to 64,1.3402454624689808,0.7925303047554881,Liberal Party,76,0
+Yukon,55 to 64,Female,Some university,16,Female 55 to 64,1.7490565932448074,0.8518337712917614,Liberal Party,16,0
+Yukon,55 to 64,Female,University or above,78,Female 55 to 64,1.8441901298896317,0.863443513468188,Liberal Party,78,0
+Northwest Territories,25 to 34,Male,No degree,82,Male 25 to 34,4.0515779279010005,0.9829025042488188,Liberal Party,82,0
+Northwest Territories,25 to 34,Male,High School,86,Male 25 to 34,3.508897695561556,0.970939878088649,Liberal Party,86,0
+Northwest Territories,25 to 34,Male,College,67,Male 25 to 34,3.6033000100762997,0.9734883090025256,Liberal Party,67,0
+Northwest Territories,25 to 34,Male,Some university,8,Male 25 to 34,4.012111140852126,0.9822264614414442,Liberal Party,8,0
+Northwest Territories,25 to 34,Male,University or above,69,Male 25 to 34,4.107244677496951,0.9838132753423218,Liberal Party,69,0
+Northwest Territories,25 to 34,Female,No degree,59,Female 25 to 34,1.8349926619143868,0.862355421380708,Liberal Party,59,0
+Northwest Territories,25 to 34,Female,High School,84,Female 25 to 34,1.2923124295749424,0.7845383346898067,Liberal Party,84,0
+Northwest Territories,25 to 34,Female,College,73,Female 25 to 34,1.3867147440896859,0.8000672527925983,Liberal Party,73,0
+Northwest Territories,25 to 34,Female,Some university,7,Female 25 to 34,1.7955258748655125,0.8576034295887636,Liberal Party,7,0
+Northwest Territories,25 to 34,Female,University or above,103,Female 25 to 34,1.8906594115103368,0.8688306979584404,Liberal Party,103,0
+Northwest Territories,35 to 44,Male,No degree,66,Male 35 to 44,3.4613978724022663,0.9695692376680395,Liberal Party,66,0
+Northwest Territories,35 to 44,Male,High School,61,Male 35 to 44,2.918717640062822,0.9487639983070053,Liberal Party,61,0
+Northwest Territories,35 to 44,Male,College,57,Male 35 to 44,3.0131199545775655,0.9531633355191185,Liberal Party,57,0
+Northwest Territories,35 to 44,Male,Some university,6,Male 35 to 44,3.421931085353392,0.968382949964847,Liberal Party,6,0
+Northwest Territories,35 to 44,Male,University or above,77,Male 35 to 44,3.5170646219982165,0.9711694289147146,Liberal Party,77,0
+Northwest Territories,35 to 44,Female,No degree,52,Female 35 to 44,1.13484350984871,0.7567316436831739,Liberal Party,52,0
+Northwest Territories,35 to 44,Female,High School,48,Female 35 to 44,0.5921632775092656,0.6438613479218473,Liberal Party,48,0
+Northwest Territories,35 to 44,Female,College,78,Female 35 to 44,0.6865655920240092,0.6652024906210892,Liberal Party,78,0
+Northwest Territories,35 to 44,Female,Some university,12,Female 35 to 44,1.0953767227998359,0.7493928408034954,Liberal Party,12,0
+Northwest Territories,35 to 44,Female,University or above,100,Female 35 to 44,1.1905102594446602,0.7668323113030289,Liberal Party,100,0
+Northwest Territories,45 to 54,Male,No degree,78,Male 45 to 54,2.856298525131379,0.9456433498360253,Liberal Party,78,0
+Northwest Territories,45 to 54,Male,High School,56,Male 45 to 54,2.3136182927919346,0.9099986374704722,Liberal Party,56,0
+Northwest Territories,45 to 54,Male,College,71,Male 45 to 54,2.4080206073066783,0.9174368737207467,Liberal Party,71,0
+Northwest Territories,45 to 54,Male,Some university,9,Male 45 to 54,2.816831738082505,0.9435786313608754,Liberal Party,9,0
+Northwest Territories,45 to 54,Male,University or above,57,Male 45 to 54,2.9119652747273292,0.9484347635252949,Liberal Party,57,0
+Northwest Territories,45 to 54,Female,No degree,70,Female 45 to 54,1.0336249940839628,0.7376180727362287,Liberal Party,70,0
+Northwest Territories,45 to 54,Female,High School,58,Female 45 to 54,0.4909447617445184,0.6203289687984263,Liberal Party,58,0
+Northwest Territories,45 to 54,Female,College,92,Female 45 to 54,0.5853470762592621,0.6422968382243845,Liberal Party,92,0
+Northwest Territories,45 to 54,Female,Some university,14,Female 45 to 54,0.9941582070350887,0.7299084632708166,Liberal Party,14,0
+Northwest Territories,45 to 54,Female,University or above,66,Female 45 to 54,1.089291743679913,0.7482483288632991,Liberal Party,66,0
+Northwest Territories,55 to 64,Male,No degree,58,Male 55 to 64,3.141003333359782,0.9585527608408602,Liberal Party,58,0
+Northwest Territories,55 to 64,Male,High School,41,Male 55 to 64,2.5983231010203376,0.9307535792842464,Liberal Party,41,0
+Northwest Territories,55 to 64,Male,College,49,Male 55 to 64,2.6927254155350813,0.9365960202200485,Liberal Party,49,0
+Northwest Territories,55 to 64,Male,Some university,8,Male 55 to 64,3.101536546310908,0.9569560816106191,Liberal Party,8,0
+Northwest Territories,55 to 64,Male,University or above,53,Male 55 to 64,3.196670082955732,0.9607087740607749,Liberal Party,53,0
+Northwest Territories,55 to 64,Female,No degree,53,Female 55 to 64,-2.818359870479588,0.05634006905442098,Conservative Party,0,53
+Northwest Territories,55 to 64,Female,High School,47,Female 55 to 64,-3.3610401028190324,0.03353549628726098,Conservative Party,0,47
+Northwest Territories,55 to 64,Female,College,69,Female 55 to 64,-3.2666377883042887,0.03673361249767486,Conservative Party,0,69
+Northwest Territories,55 to 64,Female,Some university,15,Female 55 to 64,-2.857826657528462,0.05427815456618337,Conservative Party,0,15
+Northwest Territories,55 to 64,Female,University or above,55,Female 55 to 64,-2.762693120883638,0.059373780518690154,Conservative Party,0,55
+Nunavut,25 to 34,Male,No degree,107,Male 25 to 34,0.22511794312641387,0.556043006080683,Liberal Party,107,0
+Nunavut,25 to 34,Male,High School,63,Male 25 to 34,-0.31756228921303054,0.4212699512568789,Conservative Party,0,63
+Nunavut,25 to 34,Male,College,37,Male 25 to 34,-0.22315997469828708,0.4444403892915822,Conservative Party,0,37
+Nunavut,25 to 34,Male,Some university,1,Male 25 to 34,0.18565115607753957,0.5462799402558115,Liberal Party,1,0
+Nunavut,25 to 34,Male,University or above,32,Male 25 to 34,0.28078469272236384,0.5697385913065477,Liberal Party,32,0
+Nunavut,25 to 34,Female,No degree,104,Female 25 to 34,-2.0673136664422698,0.11231458726832656,Conservative Party,0,104
+Nunavut,25 to 34,Female,High School,62,Female 25 to 34,-2.609993898781714,0.06849799301774478,Conservative Party,0,62
+Nunavut,25 to 34,Female,College,67,Female 25 to 34,-2.5155915842669705,0.074772354623964,Conservative Party,0,67
+Nunavut,25 to 34,Female,Some university,3,Female 25 to 34,-2.106780453491144,0.10843954165825745,Conservative Party,0,3
+Nunavut,25 to 34,Female,University or above,48,Female 25 to 34,-2.0116469168463196,0.11798548370087784,Conservative Party,0,48
+Nunavut,35 to 44,Male,No degree,93,Male 35 to 44,-2.8296943399626806,0.05574048369634096,Conservative Party,0,93
+Nunavut,35 to 44,Male,High School,33,Male 35 to 44,-3.372374572302125,0.033170072262510904,Conservative Party,0,33
+Nunavut,35 to 44,Male,College,37,Male 35 to 44,-3.2779722577873813,0.03633464992346339,Conservative Party,0,37
+Nunavut,35 to 44,Male,Some university,2,Male 35 to 44,-2.8691611270115547,0.05369926392988882,Conservative Party,0,2
+Nunavut,35 to 44,Male,University or above,33,Male 35 to 44,-2.7740275903667304,0.058743919442352216,Conservative Party,0,33
+Nunavut,35 to 44,Female,No degree,87,Female 35 to 44,-2.6062137570546624,0.06873958258713535,Conservative Party,0,87
+Nunavut,35 to 44,Female,High School,34,Female 35 to 44,-3.148893989394107,0.041134880224746775,Conservative Party,0,34
+Nunavut,35 to 44,Female,College,51,Female 35 to 44,-3.054491674879363,0.04502395070258208,Conservative Party,0,51
+Nunavut,35 to 44,Female,Some university,4,Female 35 to 44,-2.6456805441035365,0.06625573643938766,Conservative Party,0,4
+Nunavut,35 to 44,Female,University or above,39,Female 35 to 44,-2.550547007458712,0.07238974550768465,Conservative Party,0,39
+Nunavut,45 to 54,Male,No degree,85,Male 45 to 54,-0.9268179367069486,0.2835707318530485,Conservative Party,0,85
+Nunavut,45 to 54,Male,High School,26,Male 45 to 54,-1.4694981690463929,0.18701890178385785,Conservative Party,0,26
+Nunavut,45 to 54,Male,College,36,Male 45 to 54,-1.3750958545316492,0.20179778200845444,Conservative Party,0,36
+Nunavut,45 to 54,Male,Some university,4,Male 45 to 54,-0.9662847237558226,0.2756216546063672,Conservative Party,0,4
+Nunavut,45 to 54,Male,University or above,26,Male 45 to 54,-0.8711511871109984,0.29501482038219,Conservative Party,0,26
+Nunavut,45 to 54,Female,No degree,88,Female 45 to 54,-3.5370447915493757,0.02827637460732466,Conservative Party,0,88
+Nunavut,45 to 54,Female,High School,20,Female 45 to 54,-4.07972502388882,0.016630852543029463,Conservative Party,0,20
+Nunavut,45 to 54,Female,College,54,Female 45 to 54,-3.9853227093740764,0.018247293020454112,Conservative Party,0,54
+Nunavut,45 to 54,Female,Some university,2,Female 45 to 54,-3.5765115785982498,0.02721190852860964,Conservative Party,0,2
+Nunavut,45 to 54,Female,University or above,31,Female 45 to 54,-3.4813780419534255,0.029846751464202806,Conservative Party,0,31
+Nunavut,55 to 64,Male,No degree,43,Male 55 to 64,-2.0762908985652686,0.11142266721613613,Conservative Party,0,43
+Nunavut,55 to 64,Male,High School,17,Male 55 to 64,-2.618971130904713,0.06792740569607943,Conservative Party,0,17
+Nunavut,55 to 64,Male,College,29,Male 55 to 64,-2.5245688163899693,0.07415366262189421,Conservative Party,0,29
+Nunavut,55 to 64,Male,Some university,3,Male 55 to 64,-2.1157576856141427,0.10757466515969237,Conservative Party,0,3
+Nunavut,55 to 64,Male,University or above,22,Male 55 to 64,-2.0206241489693184,0.1170544679625797,Conservative Party,0,22
+Nunavut,55 to 64,Female,No degree,45,Female 55 to 64,-4.046278944759293,0.017186774316392293,Conservative Party,0,45
+Nunavut,55 to 64,Female,High School,11,Female 55 to 64,-4.5889591770987375,0.010061175140788593,Conservative Party,0,11
+Nunavut,55 to 64,Female,College,30,Female 55 to 64,-4.494556862583994,0.011046246719308362,Conservative Party,0,30
+Nunavut,55 to 64,Female,Some university,5,Female 55 to 64,-4.085745731808167,0.01653267429377416,Conservative Party,0,5
+Nunavut,55 to 64,Female,University or above,26,Female 55 to 64,-3.990612195163343,0.018152776499748984,Conservative Party,0,26
